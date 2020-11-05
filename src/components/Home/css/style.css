@@ -1,0 +1,14 @@
+.logo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-container {
+    min-width: 300px;
+}
+.temperature-container{
+    font-size: 40px;
+    font-weight: bold;
+}
+.place-weather-details{
+    margin-top: 30px;
+}
