@@ -12,6 +12,7 @@ const loadScript = (url, callback) => {
   script.type = 'text/javascript';
 
   if (script.readyState) {
+    // eslint-disable-next-line func-names
     script.onreadystatechange = function () {
       if (script.readyState === 'loaded' || script.readyState === 'complete') {
         script.onreadystatechange = null;
@@ -49,7 +50,6 @@ async function handlePlaceSelect(updateQuery, onPlaceSelect) {
 
   const query = addressObject.formatted_address;
   updateQuery(query);
-  console.log(place);
   onPlaceSelect(place);
 }
 

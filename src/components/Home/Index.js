@@ -91,6 +91,7 @@ const Home = () => {
       setWeather({ ...result });
       setIsLoading(false);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error(error);
       setIsLoading(false);
     }
